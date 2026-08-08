@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Drexora Hub — Explore Drexora Products &amp; Technology</title>
+<meta name="description" content="Explore Drexora's digital products, AI projects, software and upcoming technology. Discover what's live, what's in development and what's coming next.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Drexora Hub — Explore Drexora Products & Technology">
+<meta property="og:description" content="Explore Drexora's digital products, AI projects, software and upcoming technology. Discover what's live, what's in development and what's coming next.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://drexora.name.ng">
+<meta property="og:image" content="assets/og-image.png">
+
+<link rel="icon" type="image/png" href="assets/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<header class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#home" class="nav__logo" aria-label="Drexora Hub home">
+      <span class="nav__logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 48 48" width="30" height="30">
+          <path d="M14 6 L28 6 L42 24 L28 42 L14 42 L14 33 L20 33 L20 15 L14 15 Z" fill="url(#navGrad)"/>
+          <defs>
+            <linearGradient id="navGrad" x1="14" y1="6" x2="42" y2="42" gradientUnits="userSpaceOnUse">
+              <stop offset="0" stop-color="#a24fe0"/>
+              <stop offset="1" stop-color="#2c0f52"/>
+            </linearGradient>
+          </defs>
+        </svg>
+      </span>
+      <span class="nav__logo-text">DREXORA<span class="nav__logo-sub">HUB</span></span>
+    </a>
+
+    <nav class="nav__links" id="navLinks">
+      <a href="#home" class="nav__link active-link">Home</a>
+      <a href="#products" class="nav__link">Products</a>
+      <a href="#coming-soon" class="nav__link">Coming Soon</a>
+      <a href="#roadmap" class="nav__link">Roadmap</a>
+      <a href="#about" class="nav__link">About</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </nav>
+
+    <div class="nav__actions">
+      <a href="https://drexora.name.ng" target="_blank" rel="noopener" class="btn btn--ghost nav__cta">Visit Drexora</a>
+      <button class="nav__burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="home">
+  <div class="hero__field" aria-hidden="true">
+    <svg class="hero__chevrons" viewBox="0 0 1200 800" preserveAspectRatio="xMidYMid slice">
+      <polyline class="chev chev--1" points="120,150 260,260 120,370" />
+      <polyline class="chev chev--2" points="1080,430 940,540 1080,650" />
+      <polyline class="chev chev--3" points="700,60 780,150 700,240" />
+    </svg>
+  </div>
+
+  <div class="hero__inner">
+    <p class="eyebrow"><span class="eyebrow__dot"></span> Drexora Product Ecosystem</p>
+    <h1 class="hero__title">Welcome to <span class="grad-text">Drexora Hub</span></h1>
+    <p class="hero__sub">Explore the products, projects and technology being built by Drexora.</p>
+    <div class="hero__actions">
+      <a href="#products" class="btn btn--primary">Explore Products</a>
+      <a href="https://drexora.name.ng" target="_blank" rel="noopener" class="btn btn--outline">Visit Drexora</a>
+    </div>
+
+    <div class="hero__stats">
+      <div class="hero__stat"><span class="hero__stat-num">3</span><span class="hero__stat-label">Live Products</span></div>
+      <div class="hero__stat"><span class="hero__stat-num">1</span><span class="hero__stat-label">Featured Build</span></div>
+      <div class="hero__stat"><span class="hero__stat-num">3</span><span class="hero__stat-label">In the Pipeline</span></div>
+    </div>
+  </div>
+
+  <a href="#products" class="hero__scroll" aria-label="Scroll to products">
+    <span></span>
+  </a>
+</section>
+
+<!-- ===== PRODUCTS ===== -->
+<section class="section" id="products">
+  <div class="section__inner">
+    <p class="section__eyebrow">What we've built</p>
+    <h2 class="section__title">Products</h2>
+    <p class="section__desc">Live tools, demos and builds already carrying the Drexora name.</p>
+
+    <div class="filters" role="tablist" aria-label="Filter products by status">
+      <button class="filter active" data-filter="all">All</button>
+      <button class="filter" data-filter="live">Live</button>
+      <button class="filter" data-filter="demo">Demo</button>
+      <button class="filter" data-filter="featured">Featured</button>
+    </div>
+
+    <div class="grid grid--products">
+
+      <!-- WebIP -->
+      <article class="card" data-status="live">
+        <div class="card__top">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 6 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-6-3.8-9s1.3-6.3 3.8-9z"/></svg>
+          </span>
+          <span class="badge badge--live">🟢 Live</span>
+        </div>
+        <h3 class="card__title">WebIP</h3>
+        <p class="card__cat">Web Developer Tool</p>
+        <p class="card__desc">A simple website and IP inspection tool designed to help users inspect website IP information and work with IP addresses — a convenient way to investigate basic website and network information from a browser.</p>
+        <div class="card__tags"><span class="tag">Networking</span><span class="tag">Dev Tool</span></div>
+        <a href="https://webip.drexxora.name.ng" target="_blank" rel="noopener" class="card__btn">Visit WebIP <span>→</span></a>
+      </article>
+
+      <!-- Heavens Bake -->
+      <article class="card" data-status="demo">
+        <div class="card__top">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 12c1.5-2 3-3 8-3s6.5 1 8 3"/><path d="M3 12h18l-1.5 7a2 2 0 0 1-2 1.7H6.5A2 2 0 0 1 4.5 19z"/><path d="M9 9c0-2 1-4 3-4s3 2 3 4"/></svg>
+          </span>
+          <span class="badge badge--demo">🔵 Demo</span>
+        </div>
+        <h3 class="card__title">Heavens Bake</h3>
+        <p class="card__cat">Business Website Demo</p>
+        <p class="card__desc">A demo website created to showcase how Drexora can build modern websites for bakery and food businesses — professional online presence with product presentation, branding and business-focused web design.</p>
+        <p class="card__note">Showcase project — not an actual bakery owned by Drexora.</p>
+        <div class="card__tags"><span class="tag">Web Design</span><span class="tag">Business Demo</span></div>
+        <a href="https://heavensbake.drexxora.name.ng" target="_blank" rel="noopener" class="card__btn">View Demo <span>→</span></a>
+      </article>
+
+      <!-- Advocate -->
+      <article class="card" data-status="demo">
+        <div class="card__top">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3 2 8l10 5 10-5-10-5z"/><path d="M6 10.5V16c0 1.5 3 3 6 3s6-1.5 6-3v-5.5"/><path d="M22 8v6"/></svg>
+          </span>
+          <span class="badge badge--demo">🔵 Demo</span>
+        </div>
+        <h3 class="card__title">Advocate</h3>
+        <p class="card__cat">Education Website Demo</p>
+        <p class="card__desc">A demo school website created to demonstrate how Drexora can build modern digital platforms for educational institutions — showcasing programs, information and online presence in a professional way.</p>
+        <div class="card__tags"><span class="tag">Web Design</span><span class="tag">Education Demo</span></div>
+        <a href="https://advocate.drexxora.name.ng" target="_blank" rel="noopener" class="card__btn">View Demo <span>→</span></a>
+      </article>
+
+      <!-- Drexora Support -->
+      <article class="card card--featured" data-status="featured">
+        <div class="card__top">
+          <span class="card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3a7 7 0 0 0-7 7v3.5L3.5 17c-.4.6 0 1.5.8 1.5H12"/><path d="M12 3a7 7 0 0 1 7 7v3.5l1.5 3.5c.4.6 0 1.5-.8 1.5H15"/><path d="M9 19a3 3 0 0 0 6 0"/></svg>
+          </span>
+          <span class="badge badge--featured">🔥 Featured</span>
+        </div>
+        <h3 class="card__title">Drexora Support</h3>
+        <p class="card__cat">AI / Customer Support</p>
+        <p class="card__desc">An AI-powered support system designed to bring intelligent customer assistance directly into websites through a lightweight widget — helping businesses provide instant answers, guidance and support to visitors using AI agents.</p>
+        <p class="card__note">Planned functionality — full feature set will be announced at launch.</p>
+        <div class="card__tags"><span class="tag">AI</span><span class="tag">Widget</span><span class="tag">Support</span></div>
+        <a href="#roadmap" class="card__btn card__btn--soon">Coming Soon <span>→</span></a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== COMING SOON ===== -->
+<section class="section section--alt" id="coming-soon">
+  <div class="section__inner">
+    <p class="section__eyebrow">What's next at Drexora</p>
+    <h2 class="section__title">Coming Soon</h2>
+    <p class="section__desc">Builds currently taking shape inside the Drexora ecosystem.</p>
+
+    <div class="grid grid--incoming">
+
+      <!-- Drexora Guard -->
+      <article class="incoming-card incoming-card--major">
+        <div class="incoming-card__head">
+          <span class="incoming-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2 4 5v6c0 5 3.4 8.7 8 11 4.6-2.3 8-6 8-11V5z"/><path d="M9 12l2 2 4-4"/></svg>
+          </span>
+          <span class="badge badge--dev">🟡 In Development</span>
+        </div>
+        <h3 class="incoming-card__title">Drexora Guard</h3>
+        <p class="incoming-card__cat">Cybersecurity / Antivirus</p>
+        <p class="incoming-card__desc">An upcoming security-focused desktop application designed to help users monitor and protect their systems — Drexora's move into practical cybersecurity software and system protection tools.</p>
+        <div class="incoming-card__progress">
+          <div class="progress-bar"><span style="width:55%"></span></div>
+          <span class="progress-label">In Development</span>
+        </div>
+        <div class="incoming-card__footer">
+          <span class="release-date">Release: <strong>TBA</strong></span>
+          <button class="btn btn--notify" data-notify="Drexora Guard">Notify Me</button>
+        </div>
+      </article>
+
+      <!-- Drexora AI -->
+      <article class="incoming-card">
+        <div class="incoming-card__head">
+          <span class="incoming-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+          </span>
+          <span class="badge badge--dev">🟡 In Development</span>
+        </div>
+        <h3 class="incoming-card__title">Drexora AI</h3>
+        <p class="incoming-card__cat">Artificial Intelligence</p>
+        <p class="incoming-card__desc">An upcoming artificial intelligence product focused on bringing useful AI capabilities into the Drexora ecosystem. More details will be announced as development progresses.</p>
+        <div class="incoming-card__progress">
+          <div class="progress-bar"><span style="width:30%"></span></div>
+          <span class="progress-label">Early Development</span>
+        </div>
+        <div class="incoming-card__footer">
+          <span class="release-date">Release: <strong>TBA</strong></span>
+          <button class="btn btn--notify" data-notify="Drexora AI">Notify Me</button>
+        </div>
+      </article>
+
+      <!-- Drexy -->
+      <article class="incoming-card">
+        <div class="incoming-card__head">
+          <span class="incoming-card__icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 12c0 4.4-4 8-9 8-1.2 0-2.4-.2-3.4-.6L3 20l1.1-4A7.8 7.8 0 0 1 3 12c0-4.4 4-8 9-8s9 3.6 9 8z"/></svg>
+          </span>
+          <span class="badge badge--planned">⚪ Planned</span>
+        </div>
+        <h3 class="incoming-card__title">Drexy</h3>
+        <p class="incoming-card__cat">Communication / Chat</p>
+        <p class="incoming-card__desc">An upcoming chatting and communication application being developed as part of the Drexora ecosystem.</p>
+        <div class="incoming-card__progress">
+          <div class="progress-bar"><span style="width:12%"></span></div>
+          <span class="progress-label">Planned</span>
+        </div>
+        <div class="incoming-card__footer">
+          <span class="release-date">Release: <strong>TBA</strong></span>
+          <button class="btn btn--notify" data-notify="Drexy">Notify Me</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== ROADMAP ===== -->
+<section class="section" id="roadmap">
+  <div class="section__inner">
+    <p class="section__eyebrow">Where things stand</p>
+    <h2 class="section__title">Drexora Roadmap</h2>
+    <p class="section__desc">Products organized by where they are right now — not by invented dates.</p>
+
+    <div class="timeline">
+
+      <div class="timeline__stage">
+        <div class="timeline__marker timeline__marker--live"></div>
+        <div class="timeline__content">
+          <h3 class="timeline__label">Live</h3>
+          <p class="timeline__hint">Available to visit right now</p>
+          <ul class="timeline__list">
+            <li><span class="badge badge--live badge--sm">🟢 Live</span> WebIP</li>
+            <li><span class="badge badge--demo badge--sm">🔵 Demo</span> Heavens Bake</li>
+            <li><span class="badge badge--demo badge--sm">🔵 Demo</span> Advocate</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline__stage">
+        <div class="timeline__marker timeline__marker--focus"></div>
+        <div class="timeline__content">
+          <h3 class="timeline__label">Current Focus</h3>
+          <p class="timeline__hint">Actively being built</p>
+          <ul class="timeline__list">
+            <li><span class="badge badge--featured badge--sm">🔥 Featured</span> Drexora Support</li>
+            <li><span class="badge badge--dev badge--sm">🟡 In Development</span> Drexora Guard</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="timeline__stage">
+        <div class="timeline__marker timeline__marker--next"></div>
+        <div class="timeline__content">
+          <h3 class="timeline__label">Coming Next</h3>
+          <p class="timeline__hint">Early stage — release date TBA</p>
+          <ul class="timeline__list">
+            <li><span class="badge badge--dev badge--sm">🟡 In Development</span> Drexora AI</li>
+            <li><span class="badge badge--planned badge--sm">⚪ Planned</span> Drexy</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== ABOUT ===== -->
+<section class="section section--alt" id="about">
+  <div class="section__inner">
+    <p class="section__eyebrow">Who we are</p>
+    <h2 class="section__title">About Drexora</h2>
+    <p class="about__lead">Drexora is a technology and digital innovation company focused on building useful digital products, AI-powered solutions, security tools and modern web experiences. We create practical software and digital platforms designed to solve real-world problems while making technology more accessible and useful.</p>
+    <p class="about__lead about__lead--sub">We're a growing technology and digital product studio building modern websites, software, AI-powered tools and digital experiences. Our goal is to turn ideas into useful technology and continuously build products that solve real problems.</p>
+
+    <div class="grid grid--about">
+      <div class="about-stat">
+        <span class="about-stat__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 4v0M12 15h4"/></svg>
+        </span>
+        <span class="about-stat__num">Multiple</span>
+        <span class="about-stat__label">Digital Products</span>
+      </div>
+      <div class="about-stat">
+        <span class="about-stat__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M2 12h3M19 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
+        </span>
+        <span class="about-stat__num">Growing Ecosystem</span>
+        <span class="about-stat__label">AI &amp; Software</span>
+      </div>
+      <div class="about-stat">
+        <span class="about-stat__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 6 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-6-3.8-9s1.3-6.3 3.8-9z"/></svg>
+        </span>
+        <span class="about-stat__num">Multiple</span>
+        <span class="about-stat__label">Web Projects</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section" id="contact">
+  <div class="section__inner">
+    <p class="section__eyebrow">Get in touch</p>
+    <h2 class="section__title">Let's Connect</h2>
+    <p class="section__desc">For questions, partnerships, projects or support, contact Drexora.</p>
+
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:drexxora@yahoo.com">
+        <span class="contact-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+        </span>
+        <span class="contact-card__label">Email</span>
+        <span class="contact-card__value">drexxora@yahoo.com</span>
+      </a>
+
+      <a class="contact-card" href="https://wa.me/2349036895700" target="_blank" rel="noopener">
+        <span class="contact-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 0 1-12.4 7.6L3 20l1-5.4A8.5 8.5 0 1 1 21 11.5z"/><path d="M8.5 10.5c.3 2.4 2.6 4.7 5 5"/></svg>
+        </span>
+        <span class="contact-card__label">WhatsApp</span>
+        <span class="contact-card__value">+234 903 689 5700</span>
+      </a>
+
+      <a class="contact-card" href="https://drexora.name.ng" target="_blank" rel="noopener">
+        <span class="contact-card__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 6 3.8 9s-1.3 6.3-3.8 9c-2.5-2.7-3.8-6-3.8-9s1.3-6.3 3.8-9z"/></svg>
+        </span>
+        <span class="contact-card__label">Website</span>
+        <span class="contact-card__value">drexora.name.ng</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <span class="nav__logo-text">DREXORA</span>
+      <p class="footer__tag">Building useful technology for the future.</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Navigate</h4>
+      <a href="#home">Home</a>
+      <a href="#products">Products</a>
+      <a href="#coming-soon">Coming Soon</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Contact</h4>
+      <a href="mailto:drexxora@yahoo.com">drexxora@yahoo.com</a>
+      <a href="https://wa.me/2349036895700" target="_blank" rel="noopener">+234 903 689 5700</a>
+      <a href="https://drexora.name.ng" target="_blank" rel="noopener">Official Website</a>
+    </div>
+  </div>
+
+  <div class="footer__bottom">
+    <p>&copy; <span id="year"></span> Drexora. All rights reserved.</p>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
