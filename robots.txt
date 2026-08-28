@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://drexorahub.drexxora.name.ng/sitemap.xml

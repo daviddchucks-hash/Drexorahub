@@ -1,30 +1,30 @@
 /* =========================================================
    DREXORA HUB — DESIGN TOKENS
-   Palette pulled from the Drexora mark: deep indigo-violet
-   body, magenta-purple gradient accents, warm star highlight.
+   Sleek black theme: charcoal-black surfaces with monochrome
+   silver-steel accents. Clean, premium, security-software feel.
    ========================================================= */
 :root{
-  --bg:            #0a0512;
-  --bg-alt:        #100a1c;
-  --surface:       #170e28;
-  --surface-2:     #1d1233;
-  --border:        rgba(214, 188, 255, 0.10);
-  --border-strong: rgba(214, 188, 255, 0.22);
+  --bg:            #050505;
+  --bg-alt:        #0b0b0d;
+  --surface:       #111114;
+  --surface-2:     #19191d;
+  --border:        rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
 
-  --purple-deep:   #2c0f52;
-  --purple:        #5a1f8f;
-  --magenta:       #a83fd6;
-  --grad-brand:    linear-gradient(135deg, #b154e6 0%, #6a24ad 50%, #2c0f52 100%);
-  --grad-brand-soft: linear-gradient(135deg, rgba(177,84,230,0.18), rgba(44,15,82,0.18));
+  --purple-deep:   #101012;
+  --purple:        #1b1c1f;
+  --magenta:       #d4d4d9;
+  --grad-brand:    linear-gradient(135deg, #e8e8ec 0%, #9a9aa4 50%, #202023 100%);
+  --grad-brand-soft: linear-gradient(135deg, rgba(255,255,255,0.14), rgba(255,255,255,0.03));
 
-  --text:          #f3eefb;
-  --text-muted:    #ac9cc4;
-  --text-faint:    #766688;
+  --text:          #f5f5f7;
+  --text-muted:    #a9a9b0;
+  --text-faint:    #6e6e76;
 
   --green:  #35d68a;
   --blue:   #4fa9ec;
   --amber:  #e0b23f;
-  --grey:   #9a8cae;
+  --grey:   #8b8b94;
   --orange: #e08a3f;
 
   --radius-lg: 20px;
@@ -104,7 +104,7 @@ button{ font-family:inherit; cursor:pointer; }
   padding:10px 20px;
   font-size:0.88rem;
 }
-.btn--ghost:hover{ border-color:var(--magenta); background:rgba(168,63,214,0.08); }
+.btn--ghost:hover{ border-color:var(--magenta); background:rgba(255,255,255,0.08); }
 .btn--notify{
   background:var(--surface-2);
   border-color:var(--border-strong);
@@ -120,14 +120,14 @@ button{ font-family:inherit; cursor:pointer; }
   position:fixed;
   top:0; left:0; right:0;
   z-index:200;
-  background:rgba(10,5,18,0.6);
+  background:rgba(5,5,5,0.6);
   backdrop-filter:blur(14px);
   -webkit-backdrop-filter:blur(14px);
   border-bottom:1px solid transparent;
   transition:border-color .3s var(--ease), background .3s var(--ease);
 }
 .nav.is-scrolled{
-  background:rgba(10,5,18,0.86);
+  background:rgba(5,5,5,0.86);
   border-bottom-color:var(--border);
 }
 .nav__inner{
@@ -215,8 +215,8 @@ button{ font-family:inherit; cursor:pointer; }
   padding:140px 24px 80px;
   overflow:hidden;
   background:
-    radial-gradient(60% 55% at 50% 8%, rgba(106,36,173,0.35), transparent 60%),
-    radial-gradient(50% 45% at 85% 85%, rgba(168,63,214,0.16), transparent 60%),
+    radial-gradient(60% 55% at 50% 8%, rgba(255,255,255,0.06), transparent 60%),
+    radial-gradient(50% 45% at 85% 85%, rgba(255,255,255,0.05), transparent 60%),
     var(--bg);
 }
 .hero__field{
@@ -270,7 +270,7 @@ button{ font-family:inherit; cursor:pointer; }
   width:7px; height:7px;
   border-radius:50%;
   background:var(--magenta);
-  box-shadow:0 0 0 3px rgba(168,63,214,0.18);
+  box-shadow:0 0 0 3px rgba(255,255,255,0.18);
 }
 .hero__title{
   font-size:clamp(2.4rem, 6vw, 4.2rem);
@@ -465,8 +465,8 @@ button{ font-family:inherit; cursor:pointer; }
 .card__btn--soon{ color:var(--text-muted); }
 
 .card--featured{
-  background:linear-gradient(180deg, rgba(168,63,214,0.08), var(--surface) 40%);
-  border-color:rgba(168,63,214,0.35);
+  background:linear-gradient(180deg, rgba(255,255,255,0.05), var(--surface) 40%);
+  border-color:rgba(255,255,255,0.35);
 }
 
 /* =============== BADGES =============== */
@@ -484,7 +484,7 @@ button{ font-family:inherit; cursor:pointer; }
 }
 .badge--live{ background:rgba(53,214,138,0.12); color:var(--green); border:1px solid rgba(53,214,138,0.3); }
 .badge--demo{ background:rgba(79,169,236,0.12); color:var(--blue); border:1px solid rgba(79,169,236,0.3); }
-.badge--featured{ background:rgba(168,63,214,0.16); color:#d79bef; border:1px solid rgba(168,63,214,0.4); }
+.badge--featured{ background:rgba(255,255,255,0.10); color:#e6e6ea; border:1px solid rgba(255,255,255,0.4); }
 .badge--dev{ background:rgba(224,178,63,0.12); color:var(--amber); border:1px solid rgba(224,178,63,0.3); }
 .badge--planned{ background:rgba(154,140,174,0.12); color:var(--grey); border:1px solid rgba(154,140,174,0.3); }
 .badge--coming{ background:rgba(224,138,63,0.12); color:var(--orange); border:1px solid rgba(224,138,63,0.3); }
@@ -505,8 +505,8 @@ button{ font-family:inherit; cursor:pointer; }
 .incoming-card:hover{ transform:translateY(-6px); border-color:var(--magenta); }
 .incoming-card--major{
   border-style:solid;
-  background:linear-gradient(160deg, rgba(90,31,143,0.16), var(--bg) 55%);
-  border-color:rgba(168,63,214,0.4);
+  background:linear-gradient(160deg, rgba(255,255,255,0.06), var(--bg) 55%);
+  border-color:rgba(255,255,255,0.4);
   position:relative;
 }
 .incoming-card--major::after{
@@ -704,7 +704,7 @@ button{ font-family:inherit; cursor:pointer; }
   border:none;
   color:#fff;
   display:flex; align-items:center; justify-content:center;
-  box-shadow:0 8px 24px rgba(90,31,143,0.35);
+  box-shadow:0 8px 24px rgba(0,0,0,0.5);
   opacity:0; visibility:hidden;
   transform:translateY(10px);
   transition:opacity .3s var(--ease), transform .3s var(--ease), visibility .3s;
@@ -743,7 +743,7 @@ button{ font-family:inherit; cursor:pointer; }
   .nav__links{
     position:fixed;
     top:64px; left:0; right:0;
-    background:rgba(10,5,18,0.98);
+    background:rgba(5,5,5,0.98);
     backdrop-filter:blur(14px);
     flex-direction:column;
     align-items:stretch;
